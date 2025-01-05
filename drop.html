@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .drop{
+            background-color: red;
+            display: flex;
+            justify-content: space-between;
+        }
+        .drop .logo{
+            margin: 30px;
+        }
+        #link{
+            display: none;
+            background-color: red;
+            text-align: center;
+            font-size: 40px;
+            padding-right: 20px;
+        }
+        #link a{
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="drop">
+        <div class="logo">
+            <h1>logo</h1>
+        </div>
+        <div>
+            <input type="image" src="menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" onclick="drop()">
+        </div>
+    </div>
+        <div id="link">
+            <a href="#">New</a><br>
+            <a href="#">Current</a><br>
+            <a href="#">feee</a><br>
+        </div>
+    <script src="kg.js"></script>
+</body>
+</html>

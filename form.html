@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            margin-bottom: 40px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        .card h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .card p {
+            margin: 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <form id="forms" onsubmit="displayy(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender" required><br><br>
+
+        <label for="birth_date">Birth Date:</label>
+        <input type="date" id="birth_date" name="birth_date" required><br><br>
+
+        <label for="image">Update Your Image:</label>
+        <input type="text" id="image" name="image" accept="image/*"><br><hr>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description"><br><br>
+
+        <label for="major">Major:</label>
+        <input type="text" id="major" name="major"><br><br>
+
+        <label for="university">University:</label>
+        <input type="text" id="university" name="university"><br><br>
+
+        <label>Programming Languages:</label><br>
+        <input type="checkbox" id="html" name="language" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="language" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="javascript" name="language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br><hr>
+
+        <label for="siblings">Siblings:</label>
+        <input type="text" id="siblings" name="siblings"><br><br>
+
+        <label for="sibling_description">Description of Sibling:</label>
+        <input type="text" id="sibling_description" name="sibling_description"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div class="card">
+        <h3>Name</h3><br>
+        <p id="name_result"></p>
+    </div>
+
+    <div class="card">
+        <h3>Age</h3><br>
+        <p id="age_result"></p>
+    </div>
+
+    <div class="card">
+        <h3>Gender</h3><br>
+        <p id="gender_result"></p>
+    </div>
+
+    <div class="card">
+        <h3>Birth Date</h3><br>
+        <p id="birth_date_result"></p>
+    </div>
+
+    <div class="card">
+        <h3>Image</h3><br>
+        <p id="image">
+            <img id="image_result"src="" alt="">
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Description</h3><br>
+        <p id="description_result"></p>
+    </div>
+
+    <div class="card">
+        <h3>Major</h3><br>
+        <p id="major_result"></p>
+    </div>
+
+    <div class="card">
+        <h3>University</h3><br>
+        <p id="university_result"></p>
+    </div>
+
+    <div class="card">
+        <h3>Programming Languages</h3>
+        <p id="languages_result"></p>
+    </div>
+
+    <div class="card">
+        <h3>Siblings</h3><br>
+        <p id="siblings_result"></p>
+    </div>
+
+    <div class="card">
+        <h3>Sibling Description</h3><br>
+        <p id="sibling_description_result"></p>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
